@@ -17,8 +17,15 @@
   align-items: center;
   flex-direction: column;
   background-color: var(--main-color);
-  padding: 15px;
+  padding: 25px;
   border-radius: 23px;
+  height: 55vh;
+}
+
+.intro-block{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .intro img{
@@ -27,10 +34,42 @@
 }
 
 .intro h3, .intro p{
-  /* border: 1px solid black; */
   text-align: center;
   color: white;
-  margin-bottom: 0;
+}
+
+.social{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.social a{
+  font-size: 1.4rem;
+  color: white;
+  margin: 0px 15px;
+}
+
+.freelance{
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.freelance button{
+  background-color: var(--main-color);
+  border-radius: 23px;
+  color: white;
+  flex-grow: 1;
+  margin: 2px;
+  height: 60px;
+}
+
+.freelance button img{
+  height: 23px;
+  margin-right: 8px;
+  filter: invert(100%);
 }
 
 @media (max-width: 768px) {
@@ -47,17 +86,23 @@
     .intro{
       padding: 30px;
       border-radius: 23px;
+      height: 65vh;
+    }
+
+    .intro-block{
+      flex-direction: column;
+    }
+
+    .intro-block h3{
+      margin-top: 6px;
     }
     
     .intro img{
-      width: 150px;
+      width: 200px;
       border-radius: 50%;
     }
     
     .intro h3, .intro p{
-      /* border: 1px solid black; */
-      text-align: center;
-      color: white;
-      margin-bottom: 0;
+      font-size: 1.3rem;
     }
   }
