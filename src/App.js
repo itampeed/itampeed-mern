@@ -5,6 +5,7 @@ import Contact from './Screens/Contact/index.js';
 import Youtube from './Screens/Youtube/index.js';
 import Projects from './Screens/Projects/index.js';
 import Navbar from './Components/Navbar/index.js';
+import Footer from './Components/Footer/index.js';
 import Login from './Screens/Login/index.js';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path='/login' element={<Login />} />
         </Routes>
+        <Footer/>
       </>
     </BrowserRouter>
   );
