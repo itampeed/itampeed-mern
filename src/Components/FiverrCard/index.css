@@ -1,0 +1,24 @@
+.Card{
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 350px;
+    border-radius: 23px;
+}
+.cardTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardTop img{
+    filter: invert(100%);
+    width: 30px;
+    height: 30px;
+}
+
+hr{
+    width: 300px;
+}

@@ -5,7 +5,7 @@
 }
 
 .column{
-    height: 70vh;
+    height: 75vh;
     width: 32%;
     margin: 5px;
     /* background-color: var(--main-color); */
@@ -17,15 +17,14 @@
   align-items: center;
   flex-direction: column;
   background-color: var(--main-color);
-  padding: 25px;
+  padding: 0px 25px;
   border-radius: 23px;
-  height: 55vh;
+  height: 65vh;
 }
 
 .intro-block{
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 .intro img{
@@ -84,9 +83,9 @@
     }
 
     .intro{
-      padding: 30px;
+      padding: 0px 30px;
       border-radius: 23px;
-      height: 65vh;
+      height: 68vh;
     }
 
     .intro-block{
@@ -102,7 +101,7 @@
       border-radius: 50%;
     }
     
-    .intro h3, .intro p{
-      font-size: 1.3rem;
+    .intro p{
+      font-size: 0.8rem;
     }
   }

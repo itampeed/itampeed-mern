@@ -2,8 +2,7 @@ import React from 'react'
 import './index.css'
 import ProfilePic from '../../Elements/Profilepicture.webp'
 import { Link } from 'react-router-dom'
-import Fiverr from '../../Elements/fiverr.png'
-import Upwork from '../../Elements/Upwork.png'
+import Card from '../../Components/FiverrCard/index'
 
 export default function Home() {
   return (
@@ -18,7 +17,7 @@ export default function Home() {
 
             </div>
           </div>
-          <p style={{ margin: '3px' }}>My talent is testament to the beauty that lies within the delicate details of my designs, they are simple, beautiful and adorable. Join me for creativity.</p>
+          <p style={{ margin: '1px' }}>My talent is testament to the beauty that lies within the delicate details of my designs, they are simple, beautiful and adorable. Join me for creativity.</p>
           <div className='social'>
             <Link to=''><i class="fa-brands fa-facebook"></i></Link>
             <Link to=''><i class="fa-brands fa-twitter"></i></Link>
@@ -27,10 +26,10 @@ export default function Home() {
             <Link to=''><i class="fa-brands fa-github"></i></Link>
             <Link to=''><i class="fa-brands fa-stack-overflow"></i></Link>
           </div>
+          <Card/>
         </div>
         <div className='freelance'>
-          <button><img src={Fiverr}/>Fiverr</button>
-          <button><img src={Upwork}/>Upwork</button>
+          
         </div>
       </div>
       <div className='column'></div>
