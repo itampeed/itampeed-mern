@@ -37,8 +37,8 @@ export default function Index() {
               </Link>
             </li>
             <li>
-              <Link to='/portfolio' className={`${location.pathname === '/portfolio'? "active": ""}`}>
-                Portfolio
+              <Link to='/projects' className={`${location.pathname === '/portfolio'? "active": ""}`}>
+                Projects
               </Link>
             </li>
             <li>

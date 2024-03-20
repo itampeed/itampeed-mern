@@ -1,0 +1,62 @@
+.projectCard{
+    border: 1px solid white;
+    height: 80px;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin: 5px;
+}
+
+.projectCard:hover{
+    background-color: rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+
+.projectCardimg{
+    width: 30%;
+    text-align: center;
+}
+
+.projectCardimg img{
+    height: 60px;
+    width: 100px;
+    border-radius: 12px;
+}
+
+.projectCardinfo{
+    width: 70%;
+    padding: 0px 10px;
+}
+
+.projectCardinfo h4{
+    margin: 0;
+}
+
+.visitpagebutton{
+    margin: 10px;
+}
+
+.projectCardinfoshare{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.projectCardinfoshare a{
+    color: white;
+    text-decoration: none;
+}
+
+.projectCardinfoshare a i{
+    margin-left: 8px;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 786px) {
+    .projectCardinfo{
+        width: 60%;
+        margin-left: 13px;
+    }
+}

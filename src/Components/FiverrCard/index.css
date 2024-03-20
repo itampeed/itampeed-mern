@@ -1,24 +1,40 @@
-.Card{
+.Card {
     border: 1px solid white;
+    margin: 0px auto;
     padding: 10px;
     display: flex;
     flex-direction: column;
     color: white;
-    width: 350px;
     border-radius: 23px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
-.cardTop{
+
+.cardTop {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.cardTop img{
+.cardTop img {
     filter: invert(100%);
     width: 30px;
     height: 30px;
 }
 
-hr{
-    width: 300px;
+.firverrvisitarrow {
+    transform: translateX(100px);
+    transition: transform 0.3s ease, display 0.3s ease;
+    display: none;
+}
+
+.Card:hover .firverrvisitarrow {
+    display: block;
+    transform: translateX(0px);
+}
+
+.Card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-right: 20px;
+    padding-left: 0px;
 }

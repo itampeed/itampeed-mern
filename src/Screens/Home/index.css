@@ -1,17 +1,16 @@
-.main-home{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.main-home {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.column{
-    height: 75vh;
-    width: 32%;
-    margin: 5px;
-    /* background-color: var(--main-color); */
+.column {
+  height: 75vh;
+  width: 32%;
+  margin: 5px 0px;
 }
 
-.intro{
+.intro {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -19,89 +18,93 @@
   background-color: var(--main-color);
   padding: 0px 25px;
   border-radius: 23px;
-  height: 65vh;
+  height: 100%;
 }
 
-.intro-block{
+.intro-block {
   display: flex;
   align-items: center;
 }
 
-.intro img{
+.intro img {
   width: 150px;
   border-radius: 50%;
 }
 
-.intro h3, .intro p{
+.intro h3,
+.intro p {
   text-align: center;
   color: white;
 }
 
-.social{
+.social {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.social a{
+.social a {
   font-size: 1.4rem;
   color: white;
   margin: 0px 15px;
 }
 
-.freelance{
-  margin-top: 4px;
+.Projects {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.freelance button{
+  align-items: center;
+  flex-direction: column;
   background-color: var(--main-color);
+  padding: 0px 25px;
   border-radius: 23px;
   color: white;
-  flex-grow: 1;
-  margin: 2px;
-  height: 60px;
 }
 
-.freelance button img{
-  height: 23px;
-  margin-right: 8px;
-  filter: invert(100%);
+.projectstop {
+  height: 10%;
 }
+
+.projectsbottom {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 
 @media (max-width: 768px) {
-    .main-home {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .column {
-      flex-grow: unset;
-      width: 98%;
-    }
-
-    .intro{
-      padding: 0px 30px;
-      border-radius: 23px;
-      height: 68vh;
-    }
-
-    .intro-block{
-      flex-direction: column;
-    }
-
-    .intro-block h3{
-      margin-top: 6px;
-    }
-    
-    .intro img{
-      width: 200px;
-      border-radius: 50%;
-    }
-    
-    .intro p{
-      font-size: 0.8rem;
-    }
+  .main-home {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .column {
+    flex-grow: unset;
+    width: 98%;
+    margin: 10px auto;
+  }
+
+  .intro {
+    padding: 0px 10px;
+    border-radius: 23px;
+    height: 70vh;
+  }
+
+  .intro-block {
+    flex-direction: column;
+  }
+
+  .intro-block h3 {
+    margin-top: 6px;
+  }
+
+  .intro img {
+    width: 160px;
+    border-radius: 50%;
+  }
+
+  .intro p {
+    font-size: 0.8rem;
+  }
+}

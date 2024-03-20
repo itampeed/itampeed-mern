@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <div>
             <footer>
-                <p>itampeed @ 2025 | all rights reserved</p>
+                <p>itampeed | Made with MERN technologies</p>
             </footer>
         </div>
     )
